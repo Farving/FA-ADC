@@ -1,0 +1,220 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Library:LT3045 U100
+U 1 1 5E9BB179
+P 6300 4250
+F 0 "U100" H 6300 4665 50  0000 C CNN
+F 1 "LT3045" H 6300 4574 50  0000 C CNN
+F 2 "Package_SO:MSOP-12-1EP_3x4mm_P0.65mm_EP1.65x2.85mm" H 6300 4250 50  0001 C CNN
+F 3 "" H 6300 4250 50  0001 C CNN
+	1    6300 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R101
+U 1 1 5E9BC70D
+P 5800 4600
+F 0 "R101" H 5859 4646 50  0000 L CNN
+F 1 "0R" H 5859 4555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 5800 4600 50  0001 C CNN
+F 3 "~" H 5800 4600 50  0001 C CNN
+	1    5800 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R102
+U 1 1 5E9BCB72
+P 6800 4600
+F 0 "R102" H 6859 4646 50  0000 L CNN
+F 1 "3.3k" H 6859 4555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6800 4600 50  0001 C CNN
+F 3 "~" H 6800 4600 50  0001 C CNN
+	1    6800 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 4400 6800 4400
+Wire Wire Line
+	6800 4400 6800 4500
+Wire Wire Line
+	7100 4400 7100 4500
+Wire Wire Line
+	6800 4700 6800 4750
+Wire Wire Line
+	6800 4750 6300 4750
+Wire Wire Line
+	6300 4750 6300 4600
+Wire Wire Line
+	6300 4750 5800 4750
+Wire Wire Line
+	5800 4750 5800 4700
+Connection ~ 6300 4750
+Wire Wire Line
+	7100 4750 7100 4700
+$Comp
+L power:GNDA #PWR0113
+U 1 1 5E9BD91D
+P 6300 4800
+F 0 "#PWR0113" H 6300 4550 50  0001 C CNN
+F 1 "GNDA" H 6305 4627 50  0000 C CNN
+F 2 "" H 6300 4800 50  0001 C CNN
+F 3 "" H 6300 4800 50  0001 C CNN
+	1    6300 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 4800 6300 4750
+$Comp
+L Device:R_Small R104
+U 1 1 5E9BDD40
+P 7450 4600
+F 0 "R104" H 7509 4646 50  0000 L CNN
+F 1 "18k" H 7509 4555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7450 4600 50  0001 C CNN
+F 3 "~" H 7450 4600 50  0001 C CNN
+	1    7450 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C101
+U 1 1 5E9BD06C
+P 7100 4600
+F 0 "C101" H 7192 4646 50  0000 L CNN
+F 1 "4.7u" H 7192 4555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7100 4600 50  0001 C CNN
+F 3 "~" H 7100 4600 50  0001 C CNN
+	1    7100 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R103
+U 1 1 5E9BE0D2
+P 7450 4200
+F 0 "R103" H 7509 4246 50  0000 L CNN
+F 1 "18k" H 7509 4155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7450 4200 50  0001 C CNN
+F 3 "~" H 7450 4200 50  0001 C CNN
+	1    7450 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 4300 7450 4500
+Connection ~ 7450 4300
+Wire Wire Line
+	7450 4700 7450 4750
+Wire Wire Line
+	6700 4200 6800 4200
+Wire Wire Line
+	6800 4200 6800 4100
+Connection ~ 6800 4100
+$Comp
+L Device:R_Small R100
+U 1 1 5E9BED0C
+P 6300 3700
+F 0 "R100" V 6104 3700 50  0000 C CNN
+F 1 "0R" V 6195 3700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 6300 3700 50  0001 C CNN
+F 3 "~" H 6300 3700 50  0001 C CNN
+	1    6300 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6400 3700 6800 3700
+Wire Wire Line
+	6800 3700 6800 4100
+Wire Wire Line
+	5900 4100 5800 4100
+Wire Wire Line
+	5800 4100 5800 3700
+Wire Wire Line
+	5800 3700 6200 3700
+Wire Wire Line
+	5900 4400 5800 4400
+Wire Wire Line
+	5800 4400 5800 4500
+$Comp
+L Device:C_Small C100
+U 1 1 5E9C303B
+P 5450 4600
+F 0 "C100" H 5542 4646 50  0000 L CNN
+F 1 "10u" H 5542 4555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5450 4600 50  0001 C CNN
+F 3 "~" H 5450 4600 50  0001 C CNN
+	1    5450 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C102
+U 1 1 5E9C3482
+P 7800 4600
+F 0 "C102" H 7892 4646 50  0000 L CNN
+F 1 "10u" H 7892 4555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7800 4600 50  0001 C CNN
+F 3 "~" H 7800 4600 50  0001 C CNN
+	1    7800 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 4750 7800 4700
+Wire Wire Line
+	7800 4500 7800 4100
+Wire Wire Line
+	5450 4750 5450 4700
+Wire Wire Line
+	5450 4500 5450 4100
+Connection ~ 5800 4100
+Wire Wire Line
+	5900 4200 5800 4200
+Wire Wire Line
+	5800 4200 5800 4100
+Text HLabel 5400 4100 0    50   Input ~ 0
+VIN
+Text HLabel 7850 4100 2    50   Output ~ 0
+VOUT
+Wire Wire Line
+	7850 4100 7800 4100
+Connection ~ 7800 4100
+Wire Wire Line
+	5450 4100 5400 4100
+Connection ~ 5450 4100
+Wire Wire Line
+	7450 4750 7800 4750
+Connection ~ 7450 4750
+Wire Wire Line
+	7100 4750 7450 4750
+Connection ~ 7100 4750
+Wire Wire Line
+	6800 4750 7100 4750
+Connection ~ 6800 4750
+Wire Wire Line
+	5450 4750 5800 4750
+Connection ~ 5800 4750
+Wire Wire Line
+	5450 4100 5800 4100
+Wire Wire Line
+	6700 4300 7450 4300
+Wire Wire Line
+	6800 4400 7100 4400
+Connection ~ 6800 4400
+Wire Wire Line
+	7450 4100 7800 4100
+Connection ~ 7450 4100
+Wire Wire Line
+	6800 4100 6700 4100
+Wire Wire Line
+	6800 4100 7450 4100
+$EndSCHEMATC
