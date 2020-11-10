@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:FA-ADC-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -68,7 +69,7 @@ AR Path="/5C1FA923/5C7B40EF" Ref="R27"  Part="1"
 AR Path="/5E9FB0D5/5C7B40EF" Ref="R?"  Part="1" 
 AR Path="/5E9E1C80/5C7B40EF" Ref="R200"  Part="1" 
 F 0 "R200" V 4600 4250 50  0000 L CNN
-F 1 "3.32k" V 4400 4100 50  0000 L CNN
+F 1 "562R" V 4400 4100 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 4500 4200 50  0001 C CNN
 F 3 "~" H 4500 4200 50  0001 C CNN
 	1    4500 4200
@@ -84,7 +85,7 @@ AR Path="/5C1FA923/5C7B40FA" Ref="C40"  Part="1"
 AR Path="/5E9FB0D5/5C7B40FA" Ref="C?"  Part="1" 
 AR Path="/5E9E1C80/5C7B40FA" Ref="C206"  Part="1" 
 F 0 "C206" V 4900 4250 50  0000 L CNN
-F 1 "39n" V 4700 4200 50  0000 L CNN
+F 1 "5.6n" V 4700 4200 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 4800 4200 50  0001 C CNN
 F 3 "~" H 4800 4200 50  0001 C CNN
 	1    4800 4200
@@ -100,7 +101,7 @@ AR Path="/5C1FA923/5C7B4344" Ref="C38"  Part="1"
 AR Path="/5E9FB0D5/5C7B4344" Ref="C?"  Part="1" 
 AR Path="/5E9E1C80/5C7B4344" Ref="C205"  Part="1" 
 F 0 "C205" V 4750 4000 50  0000 L CNN
-F 1 "2.2n" V 4550 3900 50  0000 L CNN
+F 1 "390p" V 4550 3900 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 4650 3950 50  0001 C CNN
 F 3 "~" H 4650 3950 50  0001 C CNN
 	1    4650 3950
@@ -455,13 +456,6 @@ F 3 "" H 5800 5050 50  0001 C CNN
 $EndComp
 Connection ~ 5600 4750
 Wire Wire Line
-	5600 4750 5600 4900
-Wire Wire Line
-	5800 4650 5800 4750
-Connection ~ 5800 4750
-Wire Wire Line
-	5800 4750 5800 4900
-Wire Wire Line
 	6400 3750 6900 3750
 Wire Wire Line
 	6900 3850 6400 3850
@@ -469,129 +463,8 @@ Wire Wire Line
 	6400 3950 6900 3950
 Wire Wire Line
 	6900 4050 6400 4050
-Text HLabel 6900 4200 2    50   Output ~ 0
+Text HLabel 7300 4200 2    50   Output ~ 0
 nRESET
-Wire Wire Line
-	6900 4200 6400 4200
-$Comp
-L Device:R_Small R?
-U 1 1 5C7F0292
-P 6550 4450
-AR Path="/5C1FA92B/5C7F0292" Ref="R?"  Part="1" 
-AR Path="/5C7BE7BD/5C7F0292" Ref="R?"  Part="1" 
-AR Path="/5C1FA923/5C7F0292" Ref="R28"  Part="1" 
-AR Path="/5E9FB0D5/5C7F0292" Ref="R?"  Part="1" 
-AR Path="/5E9E1C80/5C7F0292" Ref="R202"  Part="1" 
-F 0 "R202" V 6650 4500 50  0000 L CNN
-F 1 "49.9R" V 6450 4350 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 6550 4450 50  0001 C CNN
-F 3 "~" H 6550 4450 50  0001 C CNN
-	1    6550 4450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 5C7F04B0
-P 6750 4650
-AR Path="/5C1FA92B/5C7F04B0" Ref="C?"  Part="1" 
-AR Path="/5C7BE7BD/5C7F04B0" Ref="C?"  Part="1" 
-AR Path="/5C1FA923/5C7F04B0" Ref="C45"  Part="1" 
-AR Path="/5E9FB0D5/5C7F04B0" Ref="C?"  Part="1" 
-AR Path="/5E9E1C80/5C7F04B0" Ref="C211"  Part="1" 
-F 0 "C211" H 6842 4696 50  0000 L CNN
-F 1 "22p" H 6842 4605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 6750 4650 50  0001 C CNN
-F 3 "~" H 6750 4650 50  0001 C CNN
-	1    6750 4650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 5C7F053F
-P 7250 4650
-AR Path="/5C1FA92B/5C7F053F" Ref="C?"  Part="1" 
-AR Path="/5C7BE7BD/5C7F053F" Ref="C?"  Part="1" 
-AR Path="/5C1FA923/5C7F053F" Ref="C46"  Part="1" 
-AR Path="/5E9FB0D5/5C7F053F" Ref="C?"  Part="1" 
-AR Path="/5E9E1C80/5C7F053F" Ref="C212"  Part="1" 
-F 0 "C212" H 7342 4696 50  0000 L CNN
-F 1 "22p" H 7342 4605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 7250 4650 50  0001 C CNN
-F 3 "~" H 7250 4650 50  0001 C CNN
-	1    7250 4650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6400 4350 6550 4350
-Wire Wire Line
-	6450 4450 6400 4450
-Text HLabel 7600 2900 2    50   Output ~ 0
-I2S_MRCLK
-$Comp
-L Device:R_Small R?
-U 1 1 5C7FEC34
-P 6900 2900
-AR Path="/5C1FA92B/5C7FEC34" Ref="R?"  Part="1" 
-AR Path="/5C7BE7BD/5C7FEC34" Ref="R?"  Part="1" 
-AR Path="/5C1FA923/5C7FEC34" Ref="R29"  Part="1" 
-AR Path="/5E9FB0D5/5C7FEC34" Ref="R?"  Part="1" 
-AR Path="/5E9E1C80/5C7FEC34" Ref="R201"  Part="1" 
-F 0 "R201" V 7000 2950 50  0000 L CNN
-F 1 "0R" V 6800 2950 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 6900 2900 50  0001 C CNN
-F 3 "~" H 6900 2900 50  0001 C CNN
-	1    6900 2900
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:Crystal_GND24 Y200
-U 1 1 5C804DA5
-P 7000 4450
-F 0 "Y200" H 7191 4496 50  0000 L CNN
-F 1 "12.288MHz" H 7191 4405 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_5032-4Pin_5.0x3.2mm" H 7000 4450 50  0001 C CNN
-F 3 "~" H 7000 4450 50  0001 C CNN
-	1    7000 4450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5800 4750 6750 4750
-Connection ~ 6750 4750
-Wire Wire Line
-	6750 4750 7000 4750
-Wire Wire Line
-	6650 4450 6750 4450
-Wire Wire Line
-	6750 4550 6750 4450
-Connection ~ 6750 4450
-Wire Wire Line
-	6750 4450 6850 4450
-Wire Wire Line
-	7000 4750 7000 4650
-Wire Wire Line
-	7000 4750 7250 4750
-Connection ~ 7000 4750
-Wire Wire Line
-	7250 4550 7250 4450
-Wire Wire Line
-	7250 4450 7150 4450
-Wire Wire Line
-	7000 4250 7500 4250
-Wire Wire Line
-	7500 4250 7500 4750
-Wire Wire Line
-	7500 4750 7250 4750
-Connection ~ 7250 4750
-Wire Wire Line
-	7250 4450 7350 4450
-Wire Wire Line
-	7350 4450 7350 4100
-Wire Wire Line
-	7350 4100 6550 4100
-Connection ~ 7250 4450
-Connection ~ 6550 4100
-Wire Wire Line
-	6550 4100 6550 4350
 Wire Wire Line
 	4350 4200 3900 4200
 Wire Wire Line
@@ -604,12 +477,6 @@ Wire Wire Line
 	5600 2250 5600 2650
 Wire Wire Line
 	5800 2650 5800 2250
-Wire Wire Line
-	6550 2900 6800 2900
-Wire Wire Line
-	6550 2900 6550 4100
-Wire Wire Line
-	7000 2900 7600 2900
 Wire Wire Line
 	6400 3300 7600 3300
 Wire Wire Line
@@ -628,21 +495,22 @@ Wire Wire Line
 	5300 1900 5400 1900
 Wire Wire Line
 	5400 1900 5400 2000
-$Comp
-L Device:Net-Tie_2 NT1
-U 1 1 5EBA2D85
-P 5700 4900
-F 0 "NT1" H 5700 5081 50  0000 C CNN
-F 1 "Net-Tie_2" H 5700 4990 50  0000 C CNN
-F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 5700 4900 50  0001 C CNN
-F 3 "~" H 5700 4900 50  0001 C CNN
-	1    5700 4900
-	1    0    0    -1  
-$EndComp
-Connection ~ 5600 4900
+Text HLabel 7600 4350 2    50   Output ~ 0
+I2S_MCLKI
 Wire Wire Line
-	5600 4900 5600 5050
-Connection ~ 5800 4900
+	5600 4750 5600 4850
 Wire Wire Line
-	5800 4900 5800 5050
+	5800 4650 5800 4850
+Wire Wire Line
+	5600 4850 5800 4850
+Connection ~ 5600 4850
+Wire Wire Line
+	5600 4850 5600 5050
+Connection ~ 5800 4850
+Wire Wire Line
+	5800 4850 5800 5050
+Wire Wire Line
+	6400 4200 7300 4200
+Wire Wire Line
+	6400 4350 7600 4350
 $EndSCHEMATC
